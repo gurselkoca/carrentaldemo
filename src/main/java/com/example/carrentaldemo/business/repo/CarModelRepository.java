@@ -1,12 +1,12 @@
 package com.example.carrentaldemo.business.repo;
 
-import com.example.carrentaldemo.business.domain.Brand;
 import com.example.carrentaldemo.business.domain.CarModel;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.stereotype.Repository;
 
 
-@RepositoryRestResource(collectionResourceRel = "carmodel", path = "carmodel")
-public interface CarModelRepository extends JpaRepository<CarModel,Long> {
+//@RepositoryRestResource(collectionResourceRel = "carmodel", path = "carmodel")
+@Repository
+public interface CarModelRepository extends JpaRepository<CarModel, Long> {
 
 }

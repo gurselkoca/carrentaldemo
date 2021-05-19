@@ -2,7 +2,6 @@ package com.example.carrentaldemo.business.domain;
 
 import lombok.Data;
 
-import javax.annotation.Generated;
 import javax.persistence.*;
 import java.util.Date;
 
@@ -32,5 +31,6 @@ public class BaseEntity implements  java.io.Serializable{
 
     @Column
     protected Boolean active = Boolean.TRUE;
+
 
 }

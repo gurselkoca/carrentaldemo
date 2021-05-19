@@ -6,8 +6,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class CarrentaldemoApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(CarrentaldemoApplication.class, args);
-    }
+//    void call() {
+//        int[] aa = new int[] {1,2,3};
+//        int b=3;
+//        IntStream.of(aa).forEach(x->{
+//
+//            System.out.println(this.getClass().getName()+ x);
+//        });
+//    }
+public static void main(String[] args) {
+    // new CarrentaldemoApplication().call();
+    SpringApplication.run(CarrentaldemoApplication.class, args);
+}
 
 }

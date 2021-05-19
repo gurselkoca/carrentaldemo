@@ -1,14 +1,17 @@
 package com.example.carrentaldemo.business.domain;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import java.math.BigDecimal;
 
 @Entity
 @Data
-//@Table(uniqueConstraints =
-//@UniqueConstraint(columnNames = {"code"}))
+@EqualsAndHashCode(callSuper = true)
 public class CarModel extends NameCodeEntity {
     @ManyToOne
     @JoinColumn(nullable = false)

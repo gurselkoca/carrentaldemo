@@ -1,6 +1,7 @@
 package com.example.carrentaldemo.business.domain;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,6 +11,7 @@ import java.util.Date;
 
 @Entity
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class Rent extends BaseEntity{
     @ManyToOne
     @JoinColumn
